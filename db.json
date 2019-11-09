@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Dương Hữu Đại",
+      "address": "30",
+      "phone": "0983919892",
+      "email": "test@email.com",
+      "password": "25f9e794323b453885f5181f1b624d0b",
+      "id": "b0f717",
+      "avatar": "uploads/2db41e545b60362284aed69f229c8376"
+    },
+    {
+      "name": "Dương Hữu Đại",
+      "address": "30",
+      "phone": "0983919892",
+      "email": "test@email.com",
+      "password": "25f9e794323b453885f5181f1b624d0b",
+      "id": "65652c",
+      "avatar": "uploads/814f43b10a44a919d67371843f65a162"
+    }
+  ]
+}

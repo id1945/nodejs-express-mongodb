@@ -1,0 +1,31 @@
+extends ../layouts/common.pug 
+
+block content
+    if errors
+        each error in errors
+             .m-auto.col-6.alert.alert-danger=  error
+
+    h1(class="text-center") Create User
+    form(action="/users/create" method="POST" enctype="multipart/form-data")
+        div(class="col-6 m-auto")
+            div(class="form-group")
+                label Name
+                input(name="name", type="text", autocomplete="off" class="form-control" placeholder="Enter name")
+            div(class="form-group")
+                label Address
+                input(type="text" name="address" autocomplete="off" class="form-control" placeholder="Enter email")
+            div(class="form-group")
+                label Phone
+                input(type="text" name="phone" autocomplete="off" class="form-control" placeholder="Enter phone")
+            div(class="form-group")
+                label Email
+                input(type="email" name="email" autocomplete="off" class="form-control" placeholder="Enter email")
+            div(class="form-group")
+                label Password
+                input(type="password" name="password" autocomplete="off" class="form-control" placeholder="Enter password")
+            div(class="form-group")
+                label Avatar
+                input(type="file" name="avatar" class="form-control")
+            a(href="/users") 
+                button(type="button" class="btn btn-info") << back
+            button(type="submit" class="btn btn-success float-right") Create User

@@ -1,0 +1,21 @@
+extends ../layouts/common.pug 
+
+block content
+    div(class="col-6 m-auto")
+        h1(class="text-center") View User Info
+        div(class="text-center")
+            img(src=`../`+user.avatar width="140")
+        div(class="form-group")
+            label Name
+            input(type="text", value= user.name, autocomplete="off" class="form-control" disabled)
+        div(class="form-group")
+            label Addres
+            input(type="text" value= user.address, autocomplete="off" class="form-control" disabled)
+        div(class="form-group")
+            label Email
+            input(type="text" value= user.email,  autocomplete="off" class="form-control" disabled)
+        div(class="form-group")
+            label Phone
+            input(type="text" value= user.phone, autocomplete="off" class="form-control" disabled)
+        a(href="/users") 
+            button(type="button" class="btn btn-info") << back

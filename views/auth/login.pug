@@ -1,0 +1,16 @@
+extends ../layouts/common.pug 
+
+block content
+    if errors
+        each error in errors
+            .m-auto.col-6.alert.alert-danger=  error
+    div(class="m-auto col-6")
+        h1(class="text-center") Login
+        form(action="" method="POST")
+            div(class="form-group")
+                label Email
+                input(type="email" name="email" class="form-control" placeholder="Enter email")
+            div(class="form-group")
+                label Password
+                input(type="password" name="password" class="form-control" placeholder="Enter password")
+            button(type="submit" class="btn btn-success float-right") Login
